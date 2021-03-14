@@ -1,0 +1,280 @@
+header{
+  height: 451px;
+  margin-bottom: 120px;
+}
+.page-icon{
+  right: -190px;
+}
+.sub-title{
+  margin: 0;
+  letter-spacing: 0.005em;
+}
+.main-title{
+  margin-bottom: 5px;
+  letter-spacing: 0.063em;
+}
+
+.header-bg{
+  background-image: url("../img/heading-img_contact.png");
+  height: 387px;
+}
+.site-logo a{
+  display: inline-block;
+  width: 260px;
+  fill: white;
+}
+.site-logo.black a{
+  fill: black;
+}
+form{
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+
+.message-text{
+  margin-bottom: 55px;
+  line-height: 1.5;
+  font-family: 'Noto Sans JP';
+  letter-spacing: 0.004em;
+}
+
+.category{
+  display: block;
+  margin-bottom: 23px;
+}
+
+.checkbox-list{
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.checkbox-item{
+  margin-right: 50px;
+}
+.checkbox{
+  appearance: none;
+  position: absolute;
+}
+.checkbox-text{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  font-family: '游ゴシック';
+}
+.checkbox-text:before{
+  content:'';
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #333;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.checkbox-text:after{
+  content:'';
+  display: block;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+  position: absolute;
+  left: calc(10px - 6px);
+  opacity: 0;
+}
+
+.checkbox:checked+.checkbox-text:after{
+  opacity: 1;
+}
+
+.form-item-title{
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],input[type="email"],input[type="tel"],textarea{
+  resize: none;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  border: 1px solid #141414;
+  width: 100%;
+  padding: 10px;
+}
+
+input[type="text"],input[type="email"],input[type="tel"]{
+  height: 41px;
+  margin-bottom: 45px;
+}
+
+textarea{
+  margin-bottom: 40px;
+  height: 212px;
+}
+
+.category:after,.name-form:after, .email-form:after, .request-content:after{
+  content:"必須";
+  display: inline-block;
+  width: 34px;
+  height: 18px;
+  background-color: #333;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Noto Sans JP';
+  text-align: center;
+  line-height: 18px;
+  margin-left: 10px;
+}
+
+.privacy-policy{
+  height: 252px;
+  padding: 10px 10px 0 10px;
+  border: 1px solid #333;
+  margin-bottom: 43px;
+  overflow: auto;
+  font-family: 'Noto Sans JP';
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.004em;
+}
+
+.privacy-title{
+  font-family: 'Montserrat';
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.004em;
+  margin-bottom: 10px;
+}
+
+.confirmation{
+  font-family: 'Noto Sans JP';
+  font-size: 1.6rem;
+  letter-spacing: 0.004em;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.confirmation-checkbox{
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333;
+  margin-right: 10px;
+  transform: translateY(-2px);
+  border-radius: 0;
+}
+
+.contact-button{
+  margin: 0 auto;
+  font-size: 1.4rem;
+  letter-spacing: 0.015em;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1100px){
+  header{
+    margin-bottom: 135px;
+    background-image: linear-gradient(90deg,#fff 0%,#fff 47.135416666667%,#222 47.135416666667%,#222 100%);
+  }
+  .header-bg{
+    width: 75.26041666667%;
+  }
+  .page-icon{
+    right: -140px;
+  }
+  .main-title{
+    font-size: 5.2rem;
+    margin-bottom: 10px;
+  }
+  .sub-title{
+    font-size: 1.6rem;
+  }
+  form{
+    margin: 0;
+    padding: 0 50px 197px;
+    width: 100%;
+  }
+  .message-text{
+    margin-bottom: 21px;
+  }
+  .category{
+    margin-bottom: 20px;
+  }
+  .checkbox-list{
+    margin-bottom: 22px;
+  }
+  input[type="text"],input[type="email"],input[type="tel"]{
+    height: 48px;
+    margin-bottom: 40px;
+  }
+  textarea{
+    height: 180px;
+  }
+  .privacy-policy{
+    height: 226px;
+    padding: 10px 15px 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  header{
+    background-image: linear-gradient(90deg,#fff 0%,#fff 47.2%,#222 47.2%,#222 100%);
+  }
+  .header-bg{
+    width: 76.53333333333333%;
+  }
+  .main-title{
+    font-size: 5.2rem;
+    margin-bottom: 10px;
+  }
+  .sub-title{
+    font-size: 1.6rem;
+  }
+  .page-icon{
+    right: -67px;
+  }
+  form{
+    width: 92%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .message-text{
+    font-size: 1.4rem;
+    line-height: 1.71428;
+    margin-bottom: 51px;
+  }
+  .checkbox-list{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+  input[type="text"],input[type="email"],input[type="tel"]{
+    height: 48px;
+    margin-bottom: 40px;
+  }
+  textarea{
+    height: 210px;
+  }
+  .privacy-policy{
+    height: 226px;
+    padding: 10px 0px 0 10px;
+    margin-bottom: 40px;
+  }
+  .confirmation label{
+    display: flex;
+    text-align: left;
+  }
+  .confirmation-checkbox{
+    display: block;
+    width: 16px;
+    height: 16px;
+    transform: translateY(5px);
+  }
+  .confirmation-text{
+    display: block;
+    width: 84%;
+  }
+}

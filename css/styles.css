@@ -108,6 +108,12 @@ header{
   line-height: 1.194445;
 }
 /* menu */
+@supports (-webkit-touch-callout: none) {
+  .background-layer, .header-nav {
+    /* Safari用のハック */
+    height: -webkit-fill-available;
+  }
+}
 .background-layer{
   display: none;
   width: 100vw;

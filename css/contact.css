@@ -55,6 +55,7 @@ form{
 }
 .checkbox{
   appearance: none;
+  -webkit-appearance: none;
   position: absolute;
 }
 .checkbox-text{

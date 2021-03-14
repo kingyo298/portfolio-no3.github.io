@@ -10,6 +10,13 @@ body{
   font-size: 1.6rem;
 }
 
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* Safari用のハック */
+    height: -webkit-fill-available;
+  }
+}
+
 a{
   text-decoration: none;
   display: inline-block;

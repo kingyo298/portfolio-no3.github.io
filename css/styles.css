@@ -1,0 +1,439 @@
+header{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(90deg,#fff 0%,#fff 44.4444%,#222 44.4444%,#222 100%);
+}
+.header-bg{
+  background-image: url("../img/kv-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 0;
+  height: 85%;
+  width: 76.38888888%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.header-inner{
+  padding: 30px 58px 0;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 12;
+  position: fixed;
+}
+.hamburger-menu{
+  height: 29px;
+  width: 62px;
+  position: relative;
+}
+.burger-line{
+  width: 22px;
+  height: 2px;
+  display: block;
+  background-color: #fff;
+  border-radius: 1px;
+}
+.burger-line.black-version{
+  background-color: black;
+}
+.top{
+  transform: translateY(-3px);
+}
+.bottom{
+  transform: translateY(3px);
+}
+.hamburger-menu.open .burger-line.open.top{
+  transform: rotate(30deg) translateY(2.5px);
+  transition: all .3s;
+}
+.hamburger-menu.open .burger-line.open.center{
+  opacity: 0;
+  transition: all .3s;
+}
+.hamburger-menu.open .burger-line.open.bottom{
+  transform: rotate(-30deg) translateY(-2.5px);
+  transition: all .3s;
+}
+.hamburger-menu:after{
+  content:"MENU";
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  font-size: 1.0rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 29px;
+}
+.hamburger-menu.black-version:after{
+  color:black;
+}
+.site-logo a{
+  display: inline-block;
+  width: 260px;
+  fill: white;
+}
+.site-logo.black a{
+  fill: black;
+}
+.site-logo:hover{
+  opacity: .5;
+  transition: all .4s;
+}
+.page-icon{
+  color:white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -146px;
+}
+.sub-title{
+  font-family: '游ゴシック';
+  font-size: 2.0rem;
+  margin-bottom: 10px;
+  line-height: 0.85;
+}
+.sub-title:first-child{
+  margin-bottom: 5px;
+}
+.main-title{
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 7.2rem;
+  line-height: 1.194445;
+}
+/* menu */
+.background-layer{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: .5;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+.icon{
+  margin-bottom: 32px;
+}
+.icon:hover{
+  opacity: .5;
+  transition: .4s;
+}
+
+.header-nav{
+  width: 36.1vw;
+  height: 100vh;
+  background-color: #222;
+  opacity: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 2.0rem;
+  font-weight: bold;
+  padding-top: 170px;
+  letter-spacing: 0.068em;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  position: fixed;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform .3s,opacity .3s;
+}
+
+.header-nav.open{
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform .3s,opacity .3s;
+}
+
+.nav-list:not(:last-child){
+  margin-bottom: 30px;
+}
+
+.nav-list:hover{
+  opacity: .5;
+  transition: .4s;
+}
+
+.noscroll{
+  overflow: hidden;
+}
+
+/* about-us */
+.about-us{
+  margin-top: 120px;
+  background-image: linear-gradient(#fff 0%, #fff 83.552631579%, #F0F0F0 83.552631579%, #F0F0F0 100%);
+}
+
+.about-us-bg{
+  background-image: url("../img/about-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  padding-left: 50px;
+}
+
+.about-us-content{
+  max-width: 590px;
+  padding: 50px 30px;
+  background-color: #fff;
+}
+
+.section-title{
+  margin-bottom: 30px;
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 0.068em;
+}
+
+.section-text{
+  font-family: 'Noto Sans JP';
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+.button{
+  display: block;
+  width: 160px;
+  height: 36px;
+  letter-spacing: 0.015em;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  color: white;
+  background-color: #000000;
+}
+.button:hover{
+  opacity: 0.8;
+  transition: .3s;
+}
+
+/* works-and-culture */
+.work-and-culture{
+  background-color: #F0F0F0;
+}
+.section-wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.w-and-c-section-wrapper{
+  padding: 80px 30px 60px;
+  max-width: 1160px;
+}
+
+.section-items{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-item:first-child{
+  margin-right: 60px;
+}
+
+.works-image{
+  max-width: 520px;
+  margin-bottom: 30px;
+}
+.culture-image{
+  max-width: 520px;
+  margin-bottom: 30px;
+}
+
+/* latest-topics */
+.latest-topic-section-wrapper{
+  padding: 60px 30px;
+  max-width: 1160px;
+}
+.news-list{
+  max-width: 700px;
+  margin-left: auto;
+}
+.news-time{
+  font-family: 'Montserrat';
+  font-size: 1.0rem;
+  color:#CECECE;
+  letter-spacing: 0.015em;
+}
+.news-title{
+  font-family: '游ゴシック';
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.004em;
+  padding: 12px 0;
+  border-bottom: 1px solid #DDDDDD;
+}
+.news-item{
+  margin-bottom: 30px;
+}
+.right{
+  margin: 0 0 0 auto;
+}
+
+/* contact */
+.contact{
+  background-color: #F2F2F2;
+}
+.contact-section-wrapper{
+  max-width: 1160px;
+  padding: 60px 30px 120px;
+  display: flex;
+  align-items: center;
+}
+.contact-content{
+  width: 40%;
+  max-width: 520px;
+  margin-right: 80px;
+}
+.contact-image{
+  max-width: 580px;
+  height: auto;
+}
+/* footer */
+footer{
+  padding: 19px;
+  background-color: #525252;
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  text-align: center;
+  color:white;
+}
+
+/*=======================================================================
+tablet-size
+=======================================================================*/
+@media screen and (min-width: 769px) and (max-width:1100px){
+  .site-logo img{
+    width: 189px;
+  }
+  .header-inner{
+    padding: 33.8px 30px 0;
+  }
+  .sub-title{
+    font-size: 1.6rem;
+  }
+  .main-title{
+    font-size: 5.6rem;
+  }
+  .page-icon{
+    right: -88px;
+  }
+  .section-wrapper{
+    width: 100%;
+    margin: 0;
+  }
+  .about-us{
+    margin-top: 80px;
+    width: 100%;
+    position: relative;
+  }
+  .about-us-bg{
+    width: 100%;
+    padding: 60px 80px;
+  }
+  .about-us-content{
+    padding: 40px 30px;
+    max-width: 590px;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+  .section-item{
+    width: 100%;
+  }
+  .latest-topic-section-wrapper{
+    padding: 40px 30px;
+  }
+  .no-wrap{
+    white-space: nowrap;
+  }
+}
+
+/*=======================================================================
+smartphone-size
+=======================================================================*/
+@media screen and (max-width: 768px){
+  .site-logo img{
+    width: 189px;
+  }
+  .header-inner{
+    padding: 19.8px 4% 0;
+  }
+  .header-nav{
+    width: 67.7vw;
+  }
+  .about-us{
+    margin-top: 80px;
+    width: 100%;
+    position: relative;
+  }
+  .about-us-bg{
+    padding: 50px 4%;
+    margin: 0 auto;
+  }
+  .page-icon{
+    right: -68px;
+  }
+  .sub-title{
+    font-size: 1.6rem;
+  }
+  .main-title{
+    font-size: 5.6rem;
+  }
+  .section-title{
+    font-size: 2.8rem;
+  }
+  .section-items{
+    flex-direction: column;
+  }
+  .section-item{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .section-wrapper{
+    width: 92%;
+  }
+  .works-image, .culture-image{
+    width: 100%;
+  }
+  .work-and-culture{
+    height: initial;
+  }
+  .w-and-c-section-wrapper{
+    padding: 40px 0 0;
+  
+  }
+  .latest-topic-section-wrapper{
+    padding: 40px 0;
+  }
+  .news-list{
+    margin-left: 0;
+  }
+  .right{
+    margin:0 auto 0 0;
+  }
+  .contact-section-wrapper{
+    flex-direction: column-reverse;
+    align-items: initial;
+    padding: 40px 0;
+  }
+  .contact-content{
+    width: 100%;
+  }
+  .contact-image{
+    margin-bottom: 30px;
+  }
+}
